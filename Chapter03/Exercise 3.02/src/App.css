@@ -1,0 +1,24 @@
+.question-display {
+  background: #ddd;
+  border: 2px solid #ccc;
+  margin: 20px;
+  padding: 10px;
+}
+
+.question {
+  font-weight: bold;
+}
+
+.question-choice {
+  height: 5em;
+  width: 20em;
+  margin: 10px;
+}
+
+.result-correct {
+  color: #272;
+}
+
+.result-incorrect {
+  color: #922;
+}

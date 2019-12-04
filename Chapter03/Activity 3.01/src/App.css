@@ -1,0 +1,29 @@
+.Tile {
+  width: 200px;
+  height: 200px;
+  font-size: 64pt;
+  border: 2px solid #aaa;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  float: left;
+  cursor: pointer;
+}
+
+.Tile:hover {
+  border: 2px solid #f00;
+}
+
+.Tile.flipped {
+  background: #aaa;
+}
+
+.Tile.matched {
+  border: 2px solid #040;
+  background: #afa;
+}
+
+button.reset {
+  padding: 10px;
+  width: 200px;
+}
