@@ -1,0 +1,20 @@
+.container {
+  text-align: center;
+}
+
+label {
+  display: inline-block;
+  margin: 5px 0;
+}
+
+label > span {
+  display: inline-block;
+  margin-right: 10px;
+  min-width: 100px;
+  text-align: right;
+}
+
+.status {
+  font-size: 20px;
+  margin: 20px 0;
+}

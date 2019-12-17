@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.6);
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.stat-list {
+  display: flex;
+  justify-content: center;
+}
+
+.stat-item {
+  margin: 0 30px;
+}

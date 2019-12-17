@@ -1,0 +1,51 @@
+.container {
+  margin: 100px auto;
+  width: 600px;
+}
+
+.house {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.house__button {
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 1px 2px 9px #ccc;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
+  width: calc(50% - 40px);
+}
+
+.character {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.character__box {
+  background: #ccc;
+  margin: 10px;
+  padding: 20px;
+  width: calc(50% - 60px);
+}
+
+.character__name {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+ul {
+  font-size: 16px;
+  margin: 20px 0 10px;
+  padding: 0 0 0 18px;
+  text-align: left;
+}
+
+li {
+  margin: 10px 0;
+}

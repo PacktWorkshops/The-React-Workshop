@@ -1,0 +1,23 @@
+label {
+  display: block;
+  min-width: 50px;
+}
+
+.title {
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.list li {
+  margin: 10px;
+}

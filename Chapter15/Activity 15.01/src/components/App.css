@@ -1,0 +1,49 @@
+.page {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.button {
+  background-color: #232e50;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 26px;
+  margin-bottom: 50px;
+  padding: 10px 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 500px;
+}
+
+li {
+  border: 1px solid #232e50;
+  border-radius: 4px;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+ul ul {
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+
+ul ul li {
+  border: 0;
+}
+
+.page > ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  justify-content: center;
+}
+
+.page > ul > li {
+  margin: 20px;
+  max-width: 380px;
+}
