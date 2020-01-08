@@ -7,27 +7,33 @@ class App extends Component {
     super(props);
 
     this.state = {
-      username: '',
-      password: '',
-      passwordConfirmation: '',
-      email: '',
+      username: "",
+      password: "",
+      passwordConfirmation: "",
+      email: "",
       errors: []
     };
 
     this.validateUsernameOnBlur = this.validateUsernameOnBlur.bind(this);
     this.validatePasswordOnBlur = this.validatePasswordOnBlur.bind(this);
-    this.validatePasswordConfirmationOnBlur = this.validatePasswordConfirmationOnBlur.bind(this);
+    this.validatePasswordConfirmationOnBlur = this.validatePasswordConfirmationOnBlur.bind(
+      this
+    );
     this.validateEmailOnBlur = this.validateEmailOnBlur.bind(this);
-
   }
 
   displayForm() {
     return (
       <div>
-        Username: <input type="text" onBlur={this.validateUsernameOnBlur} /><br />
-        Password: <input type="text" onBlur={this.validatePasswordOnBlur} /><br />
-        Password Confirmation: <input type="text" onBlur={this.validatePasswordConfirmationOnBlur} /><br />
-        Email: <input type="text" onBlur={this.validateEmailOnBlur} /><br />
+        Username: <input type="text" onBlur={this.validateUsernameOnBlur} />
+        <br />
+        Password: <input type="text" onBlur={this.validatePasswordOnBlur} />
+        <br />
+        Password Confirmation:{" "}
+        <input type="text" onBlur={this.validatePasswordConfirmationOnBlur} />
+        <br />
+        Email: <input type="text" onBlur={this.validateEmailOnBlur} />
+        <br />
         <br />
         <button onClick={this.submitForm}>Submit</button>
       </div>
@@ -67,9 +73,9 @@ class App extends Component {
     this.setState({ email, errors });
   }
   validateEmailFormat(fieldName, value) {
-    let [lhs, rhs] = value.split('@');
-    lhs = lhs || '';
-    rhs = rhs || '';
+    let [lhs, rhs] = value.split("@");
+    lhs = lhs || "";
+    rhs = rhs || "";
     if (lhs.length <= 0 || rhs.length <= 0) {
       return `${fieldName} must be in a standard email format!`;
     }
@@ -82,7 +88,6 @@ class App extends Component {
     }
     this.setState({ passwordConfirmation, errors });
   }
-
 
   submitForm(event) {
     console.log("Submitting the form now...");
