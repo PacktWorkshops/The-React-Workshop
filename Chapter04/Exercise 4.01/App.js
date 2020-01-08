@@ -8,9 +8,8 @@ class App extends Component {
     setInterval(() => this.setState({ cycle: this.state.cycle + 1 }), 1000);
   }
 
-  shouldComponentUpdate(nextProps, nextState) {
-    console.log('Should Component Update');
-    return this.props !== nextProps || this.state !== nextState;
+  componentDidMount() {
+    console.log("Component Did Mount");
   }
 
   componentDidUpdate() {
