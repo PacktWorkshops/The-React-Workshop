@@ -15,13 +15,16 @@ class App extends Component {
   displayForm() {
     return (
       <div>
+      <form>
         Username: <input type="text" /><br />
         Password: <input type="text" /><br />
         Password Confirmation: <input type="text" /><br />
-        Email: <input type="text" /><br />
+        
         <br />
         <button onClick={this.submitForm}>Submit</button>
+      </form>
       </div>
+      
     );
   }
   submitForm(event) {
