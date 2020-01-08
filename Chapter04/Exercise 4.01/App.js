@@ -1,6 +1,5 @@
-import Component from react:
 import React, { Component } from 'react';
-import ./App.css;
+
 
 class App extends Component {
   constructor(props) {
@@ -10,12 +9,15 @@ class App extends Component {
     setInterval(() => this.setState({ cycle: this.state.cycle + 1 }), 1000);
   }
 
-  componentDidMount() {
-    console.log("Component Did Mount");
+  shouldComponentUpdate(nextProps, nextState)
+  {
+  console.log("Should Component Update");
+  return this.props !== nextProps || this.state !== nextState;
   }
 
   componentDidUpdate() {
     console.log('Component Did Update');
+   
   }
 
   render() {
