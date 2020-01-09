@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 class App extends Component {
   state = {
-    username: '',
-    password: '',
-    passwordConfirmation: '',
-    email: '',
+    username: "",
+    password: "",
+    passwordConfirmation: "",
+    email: "",
     errors: []
   };
-  validateUsernameOnBlur = (event) => {
+  validateUsernameOnBlur = event => {
     console.log("I should validate whatever is in ", event.target.value);
-    this.setState();
-  }
+    this.performValidations();
+  };
   performValidations() {
     console.log(this.state.username);
     if (this.state.username.length <= 0) {
@@ -20,10 +20,14 @@ class App extends Component {
   displayForm() {
     return (
       <div>
-        Username: <input type="text" onBlur={this.validateUsernameOnBlur} /><br />
-        Password: <input type="text" /><br />
-        Password Confirmation: <input type="text" /><br />
-        Email: <input type="text" /><br />
+        Username: <input type="text" onBlur={this.validateUsernameOnBlur} />
+        <br />
+        Password: <input type="text" />
+        <br />
+        Password Confirmation: <input type="text" />
+        <br />
+        Email: <input type="text" />
+        <br />
         <br />
         <button onClick={this.submitForm}>Submit</button>
       </div>
@@ -37,12 +41,11 @@ class App extends Component {
     return (
       <div className="App">
         Create Account
-          <hr />
+        <hr />
         {this.displayForm()}
       </div>
-    )
+    );
   }
-};
-
+}
 
 export default App;
