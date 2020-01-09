@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -6,19 +6,19 @@ import {
   Link,
   useRouteMatch,
   useParams
-} from 'react-router-dom';
+} from "react-router-dom";
 
 let Inventory = [
-  { id: 1, name: 'Shoes', description: 'Some shoes you can buy' },
+  { id: 1, name: "Shoes", description: "Some shoes you can buy" },
   {
     id: 2,
-    name: 'Backpack',
-    description: 'This backpack can fit so much inside of it'
+    name: "Backpack",
+    description: "This backpack can fit so much inside of it"
   },
   {
     id: 3,
-    name: 'Travel Mug',
-    description: 'A travel mug. Fill it with liquids!'
+    name: "Travel Mug",
+    description: "A travel mug. Fill it with liquids!"
   }
 ];
 
@@ -32,7 +32,7 @@ const Store = () => {
         <Switch>
           <Route exact path={`${path}`}>
             {Inventory.map(i => (
-              <ItemSmall {...i} baseUrl={url} />
+              <ItemSmall key={`is-${i.id}`} {...i} baseUrl={url} />
             ))}
           </Route>
           <Route path={`${path}/items/:itemId`}>

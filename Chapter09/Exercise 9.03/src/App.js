@@ -1,19 +1,19 @@
-import React from 'react';
+import React from "react";
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   useLocation
-} from 'react-router-dom';
+} from "react-router-dom";
 
 const Items = [
-  'Lorem Ipsum',
-  'Ipsum Dipsum',
-  'Foo Bar',
-  'A little black cat',
-  'A lazy fox',
-  'A jumping dog'
+  "Lorem Ipsum",
+  "Ipsum Dipsum",
+  "Foo Bar",
+  "A little black cat",
+  "A lazy fox",
+  "A jumping dog"
 ];
 
 const doSearch = term => {
@@ -27,16 +27,16 @@ const doSearch = term => {
 
 const Search = props => {
   const query = new URLSearchParams(useLocation().search);
-  const term = query.get('q');
+  const term = query.get("q");
   const returned = doSearch(term);
   return (
-    <div className="About">
+    <div className="Search">
       <h1>Search Page</h1>
       <hr />
       Found results for {term}:
       <ul>
         {returned.map(t => (
-          <li>{t}</li>
+          <li key={t}>{t}</li>
         ))}
       </ul>
     </div>

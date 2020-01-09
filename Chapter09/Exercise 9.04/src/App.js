@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -41,30 +41,6 @@ const Contact = () => (
     <p>Send me an email at test@test.com!</p>
   </div>
 );
-
-const About = () => {
-  return (
-    <Router>
-      <div className="About">
-        <h1>About Page</h1>
-        <hr />
-        <p>Information about your app or who you are would go here!</p>
-        <br />
-        <Link to="/about/contact">Contact Me</Link>
-        &nbsp;
-        <Link to="/about/bio">My Bio</Link>
-        <Switch>
-          <Route path="/about/contact">
-            <Contact />
-          </Route>
-          <Route path="/about/bio">
-            <Bio />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-  );
-};
 
 const Homepage = () => (
   <div className="Homepage">

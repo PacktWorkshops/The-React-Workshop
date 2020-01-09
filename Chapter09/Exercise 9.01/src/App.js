@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const About = () => (
   <div className="About">
@@ -10,11 +10,11 @@ const About = () => (
 
 const RouteTo = path => {
   const paths = path
-    .split('/')
+    .split("/")
     .map(p => p.toLowerCase())
     .slice(1);
   switch (paths[0]) {
-    case 'about':
+    case "about":
       return <About />;
     default:
       return <div className="Default">Default Route</div>;
