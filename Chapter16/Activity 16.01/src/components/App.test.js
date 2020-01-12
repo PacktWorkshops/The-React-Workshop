@@ -8,7 +8,7 @@ import Characters from './Characters';
 configure({ adapter: new Adapter() });
 
 describe('component rendering', () => {
-  it('renders the FontList component', () => {
+  it('renders the Characters component', () => {
     const wrapper = mount(<App />);
 
     expect(wrapper.find(Characters).length).toEqual(1);
