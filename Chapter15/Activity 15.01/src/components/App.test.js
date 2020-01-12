@@ -15,7 +15,7 @@ describe('component rendering', () => {
   });
 });
 
-const API_KEY = '7c44d474c36d39cf39037ae4c0fe51d4';
+const API_KEY = '12345';
 const API = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`;
 
 const fetchData = async query => {

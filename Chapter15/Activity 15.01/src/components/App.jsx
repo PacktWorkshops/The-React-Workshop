@@ -3,7 +3,7 @@ import axios from 'axios';
 import Movie from './Movie';
 import './App.css';
 
-const API_KEY = '1237c44d474c36d39cf39037ae4c0fe51d445';
+const API_KEY = '12345';
 
 const App = () => {
   const [movies, setMovies] = useState([]);
