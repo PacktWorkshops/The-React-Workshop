@@ -9,16 +9,17 @@ const App = () => {
   const houses = useFetch('houses');
 
   const updateHouse = id => {
+    console.log(id);
     setSearchCharacters(`houses/${id}`);
   };
 
   return (
-    <div className="container">
-      <div className="house">
+    <div className='container'>
+      <div className='house'>
         {houses.map(house => (
           <button
             key={house._id}
-            className="house__button"
+            className='house__button'
             style={{
               backgroundColor: colorConverter(house.colors[0]),
               color: colorConverter(house.colors[1])

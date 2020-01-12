@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import axios from "axios";
+import React, { Component } from 'react';
+import axios from 'axios';
 
-const API_KEY = "12345";
+const API_KEY = '12345';
 
 class FontList extends Component {
   constructor(props) {
@@ -26,14 +26,14 @@ class FontList extends Component {
 
   render() {
     return (
-      <div className="card">
+      <div className='card'>
         {this.state.fonts.map((font, index) => (
           <a
             href={`https://fonts.google.com/specimen/${font.family.replace(
-              " ",
-              "+"
+              ' ',
+              '+'
             )}`}
-            className="card__item"
+            className='card__item'
             key={index}
           >
             {font.family}
