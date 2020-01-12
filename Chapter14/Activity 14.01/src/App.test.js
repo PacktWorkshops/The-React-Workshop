@@ -14,12 +14,15 @@ describe('component rendering', () => {
   });
 });
 
-const API_KEY = '12345';
-const API = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`;
+const API = `https://api.unsplash.com/photos/random`;
 
-const fetchData = async query => {
-  const url = API;
-  return await axios.get(url);
+const fetchData = async () => {
+  return await axios.get(API, {
+    headers: {
+      Authorization:
+        'Client-ID 6463359ac22d145576915c2fd1d28838f53e80174b2e95fc0b86026b6c7d6955'
+    }
+  });
 };
 
 jest.mock('axios');

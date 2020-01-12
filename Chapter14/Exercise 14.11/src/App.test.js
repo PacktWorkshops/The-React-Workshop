@@ -14,12 +14,13 @@ describe('component rendering', () => {
   });
 });
 
-const API_KEY = '12345';
-const API = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`;
+const API = `https://images-api.nasa.gov/search`;
 
 const fetchData = async query => {
   const url = API;
-  return await axios.get(url);
+  return await axios.get(API, {
+    params: { q: query }
+  });
 };
 
 jest.mock('axios');
@@ -28,6 +29,16 @@ describe('fetch data', () => {
   it('fetches data successfully from the API', async () => {
     axios.get.mockImplementation(() => Promise.resolve({ status: 200 }));
 
-    await expect(fetchData()).resolves.toEqual({ status: 200 });
+    await expect(fetchData('europa')).resolves.toEqual({ status: 200 });
+  });
+});
+
+describe('form event', () => {
+  it('triggers the popularity button click', () => {
+    const wrapper = mount(<App />);
+
+    wrapper.find('input').simulate('change', { target: { value: 'europa' } });
+
+    expect(wrapper.find('input').prop('value')).toEqual('europa');
   });
 });
