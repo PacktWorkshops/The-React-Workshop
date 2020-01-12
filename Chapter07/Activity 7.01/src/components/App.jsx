@@ -46,10 +46,13 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className='container'>
         <h1>Temperature Converter</h1>
         <StatusProvider value={this.state.celsius}>
-          <ConvertForm temperature={this.state} updateTemperature={this.updateTemperature.bind(this)} />
+          <ConvertForm
+            temperature={this.state}
+            updateTemperature={this.updateTemperature.bind(this)}
+          />
         </StatusProvider>
       </div>
     );

@@ -13,7 +13,7 @@ class App extends Component {
 }
 
 // Class-based component
-class Animal extends Component {
+export class Animal extends Component {
   render() {
     const { name, number, endangered } = this.props.details;
     // const { name, number, endangered } = props;
