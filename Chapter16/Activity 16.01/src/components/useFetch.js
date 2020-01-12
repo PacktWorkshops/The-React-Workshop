@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const API_KEY = '$2a$10$XmjRJwEYAozGztHOgNVwTOz6.s2cxGRbmQtCSsiGRyielQhXB8nUu';
+const API_KEY = '12345';
 
 const useFetch = request => {
   const [response, setResponse] = useState([]);

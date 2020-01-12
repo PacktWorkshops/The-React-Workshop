@@ -15,7 +15,7 @@ describe('component rendering', () => {
   });
 });
 
-const API_KEY = '$2a$10$XmjRJwEYAozGztHOgNVwTOz6.s2cxGRbmQtCSsiGRyielQhXB8nUu';
+const API_KEY = '12345';
 
 const fetchData = async request => {
   const url = `https://www.potterapi.com/v1/${request}?key=${API_KEY}`;
