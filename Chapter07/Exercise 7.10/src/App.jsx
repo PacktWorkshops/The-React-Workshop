@@ -8,7 +8,7 @@ import './styles.css';
 // https://source.unsplash.com/nAzqRaWJdhY/200x100
 // 200
 
-const AnimalContext = React.createContext();
+const CountContext = React.createContext(0);
 
 class App extends Component {
   constructor(props) {
@@ -82,7 +82,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <AnimalContext.Provider value={this.state.count}>
+        <CountContext.Provider value={this.state.count}>
           <Animal
             details={this.state.details}
             removeList={this.removeList.bind(this)}
@@ -90,7 +90,7 @@ class App extends Component {
             <h1>Endangered Animals</h1>
           </Animal>
           <AnimalForm addList={this.addList.bind(this)} />
-        </AnimalContext.Provider>
+        </CountContext.Provider>
       </React.Fragment>
     );
   }
@@ -280,14 +280,14 @@ const Animal = props => {
 class AnimalCount extends Component {
   render() {
     return (
-      <AnimalContext.Consumer>
+      <CountContext.Consumer>
         {props => (
           <div>
             Total number of endangered animals:
             <span> {props}</span>
           </div>
         )}
-      </AnimalContext.Consumer>
+      </CountContext.Consumer>
     );
   }
 }

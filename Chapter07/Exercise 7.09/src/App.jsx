@@ -88,8 +88,22 @@ class AnimalForm extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  getInputValue(target) {
+    if (target.type === 'radio' && target.value === 'yes') {
+      return true;
+    } else if (target.type === 'radio' && target.value === 'no') {
+      return false;
+    }
+
+    return target.value;
+  }
+
   handleChange(event) {
-    this.setState({ [event.target.name]: event.target.value });
+    const inputTarget = event.target;
+    const inputValue = this.getInputValue(inputTarget);
+    const inputName = inputTarget.name;
+
+    this.setState({ [inputName]: inputValue });
   }
 
   handleSubmit(event) {
