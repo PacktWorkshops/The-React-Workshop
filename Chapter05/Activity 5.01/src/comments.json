@@ -3,7 +3,7 @@
     {
       "name": "John Smith",
       "text": "This is an awesome page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque, purus ac feugiat eleifend, ex.",
-      "image": "https://i.pravatar.cc/200?img=10",
+      "image": "https://i.pravatar.cc/200?img=13",
       "time": "Oct 02, 2019",
       "comments": [
         {
@@ -23,7 +23,7 @@
     {
       "name": "Sarah James",
       "text": "Nice! Nullam elementum vulputate lectus sed pellentesque. Maecenas convallis orci at elit consectetur tempus ac id.",
-      "image": "https://i.pravatar.cc/200?img=13",
+      "image": "https://i.pravatar.cc/200?img=10",
       "time": "Sept 22, 2019"
     }
   ]

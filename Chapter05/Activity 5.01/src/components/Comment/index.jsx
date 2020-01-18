@@ -1,6 +1,6 @@
 import React from "react";
-
-import "./style.css";
+// styles
+import "./styles.css";
 
 export const Comment = ({ comment, level }) => (
   <div className="comment">
