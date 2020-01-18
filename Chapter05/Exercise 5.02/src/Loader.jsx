@@ -1,5 +1,6 @@
 import React from "react";
 
+// styles
 import "./loader.css";
 
 const Loader = props => {
@@ -24,4 +25,5 @@ const Loader = props => {
     </div>
   );
 };
+
 export default Loader;
