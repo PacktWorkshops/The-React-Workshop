@@ -1,0 +1,16 @@
+.profile {
+  max-width: 500px;
+  margin: 10%;
+  padding: 20px;
+  border: solid 1px #eee;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.profile-image {
+  margin-right: 20px;
+}
+
+.profile-content {
+  display: flex;
+}

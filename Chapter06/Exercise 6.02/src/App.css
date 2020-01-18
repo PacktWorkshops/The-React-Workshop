@@ -1,0 +1,12 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10%;
+}
+
+button {
+  margin-top: 2rem;
+  border: solid 1px #999;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
