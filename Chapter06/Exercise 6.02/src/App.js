@@ -2,7 +2,7 @@ import React, { Component } from "react";
 // styles
 import "./App.css";
 // component
-import { Modal } from "./Components/Modal";
+import { Modal } from "./components/Modal";
 
 class App extends Component {
   constructor(props) {
