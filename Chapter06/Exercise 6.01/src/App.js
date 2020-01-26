@@ -5,11 +5,11 @@ import "./App.css";
 class App extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      theme: "light"
+    };
     this.toggleTheme = this.toggleTheme.bind(this);
   }
-  state = {
-    theme: "light"
-  };
   toggleTheme() {
     const theme = this.state.theme === "light" ? "dark" : "light";
     this.setState({ theme });
