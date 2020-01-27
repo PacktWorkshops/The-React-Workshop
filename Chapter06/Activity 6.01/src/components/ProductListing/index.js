@@ -1,5 +1,5 @@
 import React from "react";
-
+// components
 import { Product } from "../Product";
 
 const ProductListing = props => {
@@ -11,7 +11,7 @@ const ProductListing = props => {
   return (
     <div>
       {filteredProduct.map((product, key) => (
-        <Product key={product.name} product={product} />
+        <Product key={`${product.name}-${key}`} product={product} />
       ))}
     </div>
   );

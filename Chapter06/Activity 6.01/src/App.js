@@ -4,8 +4,8 @@ import "./App.css";
 // data
 import productData from "./products.json";
 // components
-import { ProductListing } from "./Components/ProductListing";
-import { Tags } from "./Components/Tags";
+import { ProductListing } from "./components/ProductListing";
+import { Tags } from "./components/Tags";
 
 class App extends Component {
   constructor(props) {

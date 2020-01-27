@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import "./product.css";
+import "./styles.css";
 
 class Product extends Component {
   constructor(props) {
@@ -11,7 +11,9 @@ class Product extends Component {
     this.toggleDescription = this.toggleDescription.bind(this);
   }
   toggleDescription() {
-    this.setState({ showDescription: !this.state.showDescription });
+    this.setState({
+      showDescription: !this.state.showDescription
+    });
   }
   render() {
     const { name, price, summary } = this.props.product;

@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./tag.css";
+import "./styles.css";
 
 const Tag = props => (
   <button
