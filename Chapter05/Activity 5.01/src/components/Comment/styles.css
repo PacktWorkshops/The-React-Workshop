@@ -1,0 +1,34 @@
+.comment .comment {
+  margin-left: 3rem;
+}
+.comment_container {
+  border: solid 1px #aaa;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+}
+.comment_name {
+  margin: 0;
+  font-weight: normal;
+}
+.comment_time {
+  color: #555;
+  font-size: 0.8rem;
+}
+.comment_content {
+  padding-left: 1rem;
+  flex: 1;
+}
+.comment_profile {
+  border-radius: 50%;
+  width: 100px;
+  height: 100%;
+}
+.comment_button {
+  border: solid 1px #999;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.comment_button:hover {
+  background: #eee;
+}
