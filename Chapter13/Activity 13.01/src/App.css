@@ -1,0 +1,8 @@
+.App {
+  display: flex;
+  justify-content: space-between;
+}
+
+.App > div {
+  padding: 20px;
+}
