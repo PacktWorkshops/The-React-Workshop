@@ -28,7 +28,7 @@ class UncontrolledForm extends React.Component {
       <form onSubmit={handleSubmit} noValidate={true}>
         <label>
           Email:
-          <input type="text" ref={this.setNameRef}/>
+          <input type="text" name="email" ref={this.setNameRef}/>
         </label>
         <label>
           Password:

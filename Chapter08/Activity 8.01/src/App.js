@@ -96,7 +96,7 @@ class App extends Component {
               </label>
               <Field type="checkbox" name="acceptTAC"
                      onChange={handleChange} /><ErrorMessage name="acceptTAC"/><br/><br/>
-              <input type="submit" value="Register" disabled={isSubmitting || !isValid}/>
+              <input type="submit" value="Register" disabled={isSubmitting && !isValid}/>
             </form>
           )}
         </Formik>

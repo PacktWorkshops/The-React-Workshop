@@ -1,9 +1,9 @@
 import React from 'react';
 import {render} from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import App from './App';
+import LoginForm from './LoginForm';
 
 test('renders correctly', () => {
-  const {container} = render(<App/>);
+  const {container} = render(<LoginForm/>);
   expect(container).toMatchSnapshot();
 });

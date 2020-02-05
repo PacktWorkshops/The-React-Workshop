@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div>
+      <h1>
+        Login
+      </h1>
+      <form>
+        <input
+          name="email"
+          type="email"
+          value=""
+        />
+        <input
+          name="password"
+          type="password"
+          value=""
+        />
+        <button
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;

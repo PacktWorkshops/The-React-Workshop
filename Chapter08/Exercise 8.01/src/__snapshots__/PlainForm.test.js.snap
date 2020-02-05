@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <form
+    action="/login.php"
+    novalidate=""
+  >
+    <label>
+      Email:
+      <input
+        type="text"
+      />
+    </label>
+    <label>
+      Password:
+      <input
+        type="password"
+      />
+    </label>
+    <input
+      type="submit"
+      value="Login"
+    />
+  </form>
+</div>
+`;

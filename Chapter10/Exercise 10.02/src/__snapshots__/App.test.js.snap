@@ -1,0 +1,237 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div>
+      <h2>
+        Pages
+      </h2>
+      <ul>
+        <li>
+          <a
+            href="/"
+          >
+            Page1
+          </a>
+        </li>
+        <li>
+          <a
+            href="/page2"
+          >
+            Page2
+          </a>
+        </li>
+        <li>
+          <a
+            href="/Page3?param=123"
+          >
+            Page3
+          </a>
+        </li>
+        <li>
+          <a
+            href="/page4"
+          >
+            Page4
+          </a>
+        </li>
+      </ul>
+    </div>
+    <h3>
+      Page1
+    </h3>
+  </div>
+</div>
+`;
+
+exports[`routes to 404 page correctly 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div>
+      <h2>
+        Pages
+      </h2>
+      <ul>
+        <li>
+          <a
+            href="/"
+          >
+            Page1
+          </a>
+        </li>
+        <li>
+          <a
+            href="/page2"
+          >
+            Page2
+          </a>
+        </li>
+        <li>
+          <a
+            href="/Page3?param=123"
+          >
+            Page3
+          </a>
+        </li>
+        <li>
+          <a
+            href="/page4"
+          >
+            Page4
+          </a>
+        </li>
+      </ul>
+    </div>
+    <h3>
+      404 Sorry!
+    </h3>
+  </div>
+</div>
+`;
+
+exports[`routes to main page correctly 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div>
+      <h2>
+        Pages
+      </h2>
+      <ul>
+        <li>
+          <a
+            href="/"
+          >
+            Page1
+          </a>
+        </li>
+        <li>
+          <a
+            href="/page2"
+          >
+            Page2
+          </a>
+        </li>
+        <li>
+          <a
+            href="/Page3?param=123"
+          >
+            Page3
+          </a>
+        </li>
+        <li>
+          <a
+            href="/page4"
+          >
+            Page4
+          </a>
+        </li>
+      </ul>
+    </div>
+    <h3>
+      Page1
+    </h3>
+  </div>
+</div>
+`;
+
+exports[`routes to page2 correctly 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div>
+      <h2>
+        Pages
+      </h2>
+      <ul>
+        <li>
+          <a
+            href="/"
+          >
+            Page1
+          </a>
+        </li>
+        <li>
+          <a
+            href="/page2"
+          >
+            Page2
+          </a>
+        </li>
+        <li>
+          <a
+            href="/Page3?param=123"
+          >
+            Page3
+          </a>
+        </li>
+        <li>
+          <a
+            href="/page4"
+          >
+            Page4
+          </a>
+        </li>
+      </ul>
+    </div>
+    <h3>
+      Page2
+    </h3>
+  </div>
+</div>
+`;
+
+exports[`routes to page3 correctly 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div>
+      <h2>
+        Pages
+      </h2>
+      <ul>
+        <li>
+          <a
+            href="/"
+          >
+            Page1
+          </a>
+        </li>
+        <li>
+          <a
+            href="/page2"
+          >
+            Page2
+          </a>
+        </li>
+        <li>
+          <a
+            href="/Page3?param=123"
+          >
+            Page3
+          </a>
+        </li>
+        <li>
+          <a
+            href="/page4"
+          >
+            Page4
+          </a>
+        </li>
+      </ul>
+    </div>
+    <h3>
+      Page3 
+      param=321
+    </h3>
+  </div>
+</div>
+`;

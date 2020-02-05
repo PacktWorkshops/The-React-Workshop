@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    class="row"
+  >
+    <div
+      class="sidebar"
+    >
+      Sidebar
+    </div>
+    <div
+      class="main"
+    >
+      <div
+        class="navbar"
+      >
+        <a
+          href="//map"
+        >
+          Map
+        </a>
+        <a
+          href="//chart"
+        >
+          Chart
+        </a>
+        <a
+          href="//table"
+        >
+          Table
+        </a>
+      </div>
+      <h3>
+        Please select a widget.
+      </h3>
+    </div>
+  </div>
+</div>
+`;

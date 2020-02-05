@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <form
+    novalidate=""
+  >
+    <label>
+      Name:
+      <input
+        type="text"
+        value=""
+      />
+    </label>
+    <label>
+      Password:
+      <input
+        type="password"
+        value=""
+      />
+    </label>
+    <input
+      type="submit"
+      value="Login"
+    />
+  </form>
+</div>
+`;
