@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <section
+      class="comments"
+    >
+      <h1>
+        Comments
+      </h1>
+      <div
+        class="comment"
+      >
+        <div
+          class="comment_container"
+        >
+          <img
+            alt="John Smith"
+            class="comment_profile"
+            src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=200&q=80"
+          />
+          <div
+            class="comment_content"
+          >
+            <h2
+              class="comment_name"
+            >
+              John Smith
+            </h2>
+            <strong
+              class="comment_time"
+            >
+              Oct 02, 2019
+            </strong>
+            <p>
+              This is an awesome page. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque, purus ac feugiat eleifend, ex.
+            </p>
+            <button
+              class="comment_button"
+            >
+              Reply
+            </button>
+          </div>
+        </div>
+        <div
+          class="comment"
+        >
+          <div
+            class="comment_container"
+          >
+            <img
+              alt="Karen Michaels"
+              class="comment_profile"
+              src="https://images.unsplash.com/photo-1567336273898-ebbf9eb3c3bf?auto=format&fit=crop&w=200&q=80"
+            />
+            <div
+              class="comment_content"
+            >
+              <h2
+                class="comment_name"
+              >
+                Karen Michaels
+              </h2>
+              <strong
+                class="comment_time"
+              >
+                Oct 10, 2019
+              </strong>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque, purus ac feugiat eleifend, ex.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="comment"
+        >
+          <div
+            class="comment_container"
+          >
+            <img
+              alt="Tim Parker"
+              class="comment_profile"
+              src="https://images.unsplash.com/photo-1505247964246-1f0a90443c36?auto=format&fit=crop&w=200&q=80"
+            />
+            <div
+              class="comment_content"
+            >
+              <h2
+                class="comment_name"
+              >
+                Tim Parker
+              </h2>
+              <strong
+                class="comment_time"
+              >
+                Oct 05, 2019
+              </strong>
+              <p>
+                Tullam elementum vulputate lectus sed pellentesque. Maecenas convallis orci at elit consectetur tempus ac id.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="comment"
+      >
+        <div
+          class="comment_container"
+        >
+          <img
+            alt="Sarah James"
+            class="comment_profile"
+            src="https://images.unsplash.com/photo-1552607676-17f088307dce?auto=format&fit=crop&w=200&q=80"
+          />
+          <div
+            class="comment_content"
+          >
+            <h2
+              class="comment_name"
+            >
+              Sarah James
+            </h2>
+            <strong
+              class="comment_time"
+            >
+              Sept 22, 2019
+            </strong>
+            <p>
+              Nice! Nullam elementum vulputate lectus sed pellentesque. Maecenas convallis orci at elit consectetur tempus ac id.
+            </p>
+            <button
+              class="comment_button"
+            >
+              Reply
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</DocumentFragment>
+`;

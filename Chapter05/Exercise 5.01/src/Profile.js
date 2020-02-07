@@ -6,12 +6,12 @@ class Profile extends Component {
   render() {
     const { name, image, age, interests, color, movie } = this.props.user;
     return (
-      <section class="profile">
+      <section className="profile">
         <header>
           <h1>{name}</h1>
         </header>
-        <div class="profile-content">
-          <div class="profile-image">
+        <div className="profile-content">
+          <div className="profile-image">
             <img src={image} alt={name} />
           </div>
           <div>
