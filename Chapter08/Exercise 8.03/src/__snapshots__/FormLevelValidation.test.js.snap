@@ -11,7 +11,11 @@ exports[`displays an error message 1`] = `
         value=""
       />
     </label>
-    Name is Required
+    <span
+      class="error"
+    >
+      Name is Required
+    </span>
     <label>
       Password*:
       <input
@@ -20,7 +24,11 @@ exports[`displays an error message 1`] = `
         value=""
       />
     </label>
-    Password is Required
+    <span
+      class="error"
+    >
+      Password is Required
+    </span>
     <input
       type="submit"
       value="Login"
