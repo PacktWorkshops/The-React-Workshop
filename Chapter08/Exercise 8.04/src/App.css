@@ -1,0 +1,69 @@
+.App {
+  margin: 0 auto;
+  max-width: 880px;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.error {
+  color: red;
+}
+
+body{
+  background: white;
+}
+
+form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: rgba(0,0,0,.1);
+  padding: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+label{
+  font-family: sans-serif;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-size: .8em;
+  color: black;
+}
+
+input[type=text], input[type=password], input[type=email] {
+  display: inline-block;
+  border: none;
+  text-align: left;
+  padding: 10px;
+  width: 350px;
+  margin: 10px 0;
+  color: black;
+}
+
+input[type=text]:focus{
+  background: none;
+  border: none;
+  color: black;
+}
+
+input[type=submit]{
+  background: transparent;
+  color: black;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 20px 0;
+  padding: 10px 30px;
+  border: 2px solid black;
+}
+
+input[type=submit]:hover{
+  background: transparent;
+  border: 2px solid rgba(69, 39, 160, .4);
+}

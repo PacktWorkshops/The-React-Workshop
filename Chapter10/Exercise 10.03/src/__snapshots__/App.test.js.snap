@@ -1,0 +1,291 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="navbar"
+    >
+      <a
+        href="/"
+      >
+        Home
+      </a>
+      <a
+        href="/dashboard"
+      >
+        Dashboard
+      </a>
+    </div>
+    <h3>
+      Home Page
+    </h3>
+  </div>
+</div>
+`;
+
+exports[`routes to 404 page correctly 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="navbar"
+    >
+      <a
+        href="/"
+      >
+        Home
+      </a>
+      <a
+        href="/dashboard"
+      >
+        Dashboard
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`routes to dashboard chart widget correctly 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="navbar"
+    >
+      <a
+        href="/"
+      >
+        Home
+      </a>
+      <a
+        href="/dashboard"
+      >
+        Dashboard
+      </a>
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="sidebar"
+      >
+        Sidebar
+      </div>
+      <div
+        class="main"
+      >
+        <div
+          class="navbar"
+        >
+          <a
+            href="/dashboard/map"
+          >
+            Map
+          </a>
+          <a
+            href="/dashboard/chart"
+          >
+            Chart
+          </a>
+          <a
+            href="/dashboard/table"
+          >
+            Table
+          </a>
+        </div>
+        <div>
+          <h3>
+            Widget: 
+            chart
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`routes to dashboard map widget correctly 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="navbar"
+    >
+      <a
+        href="/"
+      >
+        Home
+      </a>
+      <a
+        href="/dashboard"
+      >
+        Dashboard
+      </a>
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="sidebar"
+      >
+        Sidebar
+      </div>
+      <div
+        class="main"
+      >
+        <div
+          class="navbar"
+        >
+          <a
+            href="/dashboard/map"
+          >
+            Map
+          </a>
+          <a
+            href="/dashboard/chart"
+          >
+            Chart
+          </a>
+          <a
+            href="/dashboard/table"
+          >
+            Table
+          </a>
+        </div>
+        <div>
+          <h3>
+            Widget: 
+            map
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`routes to dashboard page correctly 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="navbar"
+    >
+      <a
+        href="/"
+      >
+        Home
+      </a>
+      <a
+        href="/dashboard"
+      >
+        Dashboard
+      </a>
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="sidebar"
+      >
+        Sidebar
+      </div>
+      <div
+        class="main"
+      >
+        <div
+          class="navbar"
+        >
+          <a
+            href="/dashboard/map"
+          >
+            Map
+          </a>
+          <a
+            href="/dashboard/chart"
+          >
+            Chart
+          </a>
+          <a
+            href="/dashboard/table"
+          >
+            Table
+          </a>
+        </div>
+        <h3>
+          Please select a widget.
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`routes to dashboard table widget correctly 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="navbar"
+    >
+      <a
+        href="/"
+      >
+        Home
+      </a>
+      <a
+        href="/dashboard"
+      >
+        Dashboard
+      </a>
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="sidebar"
+      >
+        Sidebar
+      </div>
+      <div
+        class="main"
+      >
+        <div
+          class="navbar"
+        >
+          <a
+            href="/dashboard/map"
+          >
+            Map
+          </a>
+          <a
+            href="/dashboard/chart"
+          >
+            Chart
+          </a>
+          <a
+            href="/dashboard/table"
+          >
+            Table
+          </a>
+        </div>
+        <div>
+          <h3>
+            Widget: 
+            table
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

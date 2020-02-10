@@ -1,4 +1,4 @@
-const backendUsers = {
+export const backendUsers = {
   'theo@gmail.com': {
     password: '123',
     token: '321'

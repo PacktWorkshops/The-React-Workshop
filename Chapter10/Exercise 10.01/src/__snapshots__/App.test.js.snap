@@ -1,0 +1,276 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div>
+      <h2>
+        Pages
+      </h2>
+      <ul>
+        <li>
+          <a
+            href="/"
+          >
+            Page1
+          </a>
+        </li>
+        <li>
+          <a
+            href="/name"
+          >
+            Page2
+          </a>
+        </li>
+        <li>
+          <a
+            href="/path/Theo"
+          >
+            Page3
+          </a>
+        </li>
+        <li>
+          <a
+            href="/path/"
+          >
+            Page3 Missing Param
+          </a>
+        </li>
+        <li>
+          <a
+            href="/path/theo/despoudis"
+          >
+            Page4
+          </a>
+        </li>
+      </ul>
+    </div>
+    <h3>
+      Page1
+    </h3>
+  </div>
+</div>
+`;
+
+exports[`routes to main page correctly 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div>
+      <h2>
+        Pages
+      </h2>
+      <ul>
+        <li>
+          <a
+            href="/"
+          >
+            Page1
+          </a>
+        </li>
+        <li>
+          <a
+            href="/name"
+          >
+            Page2
+          </a>
+        </li>
+        <li>
+          <a
+            href="/path/Theo"
+          >
+            Page3
+          </a>
+        </li>
+        <li>
+          <a
+            href="/path/"
+          >
+            Page3 Missing Param
+          </a>
+        </li>
+        <li>
+          <a
+            href="/path/theo/despoudis"
+          >
+            Page4
+          </a>
+        </li>
+      </ul>
+    </div>
+    <h3>
+      Page1
+    </h3>
+  </div>
+</div>
+`;
+
+exports[`routes to page1 correctly 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div>
+      <h2>
+        Pages
+      </h2>
+      <ul>
+        <li>
+          <a
+            href="/"
+          >
+            Page1
+          </a>
+        </li>
+        <li>
+          <a
+            href="/name"
+          >
+            Page2
+          </a>
+        </li>
+        <li>
+          <a
+            href="/path/Theo"
+          >
+            Page3
+          </a>
+        </li>
+        <li>
+          <a
+            href="/path/"
+          >
+            Page3 Missing Param
+          </a>
+        </li>
+        <li>
+          <a
+            href="/path/theo/despoudis"
+          >
+            Page4
+          </a>
+        </li>
+      </ul>
+    </div>
+    <h3>
+      ID: 
+      1
+    </h3>
+  </div>
+</div>
+`;
+
+exports[`routes to page2 correctly 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div>
+      <h2>
+        Pages
+      </h2>
+      <ul>
+        <li>
+          <a
+            href="/"
+          >
+            Page1
+          </a>
+        </li>
+        <li>
+          <a
+            href="/name"
+          >
+            Page2
+          </a>
+        </li>
+        <li>
+          <a
+            href="/path/Theo"
+          >
+            Page3
+          </a>
+        </li>
+        <li>
+          <a
+            href="/path/"
+          >
+            Page3 Missing Param
+          </a>
+        </li>
+        <li>
+          <a
+            href="/path/theo/despoudis"
+          >
+            Page4
+          </a>
+        </li>
+      </ul>
+    </div>
+    <h3>
+      Hello 
+      123
+    </h3>
+  </div>
+</div>
+`;
+
+exports[`routes to page3 correctly 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div>
+      <h2>
+        Pages
+      </h2>
+      <ul>
+        <li>
+          <a
+            href="/"
+          >
+            Page1
+          </a>
+        </li>
+        <li>
+          <a
+            href="/name"
+          >
+            Page2
+          </a>
+        </li>
+        <li>
+          <a
+            href="/path/Theo"
+          >
+            Page3
+          </a>
+        </li>
+        <li>
+          <a
+            href="/path/"
+          >
+            Page3 Missing Param
+          </a>
+        </li>
+        <li>
+          <a
+            href="/path/theo/despoudis"
+          >
+            Page4
+          </a>
+        </li>
+      </ul>
+    </div>
+    <h3>
+      First: 
+      first
+      , Last: 
+      last
+    </h3>
+  </div>
+</div>
+`;

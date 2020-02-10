@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`displays an error message 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <form>
+      <label>
+        Name:
+      </label>
+      <br />
+      <input
+        name="name"
+        type="text"
+        value=""
+      />
+      <br />
+      <label>
+        Password:
+      </label>
+      <br />
+      <input
+        name="password"
+        type="password"
+        value=""
+      />
+      <br />
+      <label>
+        Password Match:
+      </label>
+      <br />
+      <input
+        name="passwordMatch"
+        type="password"
+        value="aa"
+      />
+      <br />
+      <label>
+        Email:
+      </label>
+      <br />
+      <input
+        name="email"
+        type="email"
+        value=""
+      />
+      <br />
+      <label>
+        Accept Terms and Conditions:
+      </label>
+      <input
+        name="acceptTAC"
+        type="checkbox"
+        value="false"
+      />
+      <br />
+      <br />
+      <input
+        type="submit"
+        value="Register"
+      />
+    </form>
+  </div>
+</div>
+`;
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <form>
+      <label>
+        Name:
+      </label>
+      <br />
+      <input
+        name="name"
+        type="text"
+        value=""
+      />
+      <br />
+      <label>
+        Password:
+      </label>
+      <br />
+      <input
+        name="password"
+        type="password"
+        value=""
+      />
+      <br />
+      <label>
+        Password Match:
+      </label>
+      <br />
+      <input
+        name="passwordMatch"
+        type="password"
+        value=""
+      />
+      <br />
+      <label>
+        Email:
+      </label>
+      <br />
+      <input
+        name="email"
+        type="email"
+        value=""
+      />
+      <br />
+      <label>
+        Accept Terms and Conditions:
+      </label>
+      <input
+        name="acceptTAC"
+        type="checkbox"
+        value="false"
+      />
+      <br />
+      <br />
+      <input
+        type="submit"
+        value="Register"
+      />
+    </form>
+  </div>
+</div>
+`;

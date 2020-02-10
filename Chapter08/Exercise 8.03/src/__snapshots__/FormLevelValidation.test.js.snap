@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`displays an error message 1`] = `
+<div>
+  <form>
+    <label>
+      Name*:
+      <input
+        name="name"
+        type="text"
+        value=""
+      />
+    </label>
+    <span
+      class="error"
+    >
+      Name is Required
+    </span>
+    <label>
+      Password*:
+      <input
+        name="password"
+        type="password"
+        value=""
+      />
+    </label>
+    <span
+      class="error"
+    >
+      Password is Required
+    </span>
+    <input
+      type="submit"
+      value="Login"
+    />
+  </form>
+</div>
+`;
+
+exports[`renders correctly 1`] = `
+<div>
+  <form>
+    <label>
+      Name*:
+      <input
+        name="name"
+        type="text"
+        value=""
+      />
+    </label>
+    <label>
+      Password*:
+      <input
+        name="password"
+        type="password"
+        value=""
+      />
+    </label>
+    <input
+      type="submit"
+      value="Login"
+    />
+  </form>
+</div>
+`;
