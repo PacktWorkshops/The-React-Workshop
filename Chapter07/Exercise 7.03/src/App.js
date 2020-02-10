@@ -32,7 +32,7 @@ class Animal extends Component {
   render() {
     const details = this.props.details;
     const listDetails = details.map((detail, index) => (
-      <li key={index}>
+      <li>
         <div>
           <p>Animal: {detail.name}</p>
           <p>Number: {detail.number}</p>

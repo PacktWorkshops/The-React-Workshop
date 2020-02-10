@@ -54,7 +54,7 @@ const AnimalDetails = props => {
   const { name, number, endangered } = props.detail;
 
   return (
-    <li key={props.key}>
+    <li>
       <div>
         <p>{props.image}</p>
         <p>Animal: {name}</p>
