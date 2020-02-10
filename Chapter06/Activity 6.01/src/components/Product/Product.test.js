@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { render, cleanup, fireEvent } from "@testing-library/react";
 import { Product } from "./index";
 
@@ -16,4 +16,19 @@ const product = {
 it("renders product", () => {
   const { asFragment } = render(<Product product={product} />);
   expect(asFragment()).toMatchSnapshot();
+});
+
+it("renders the right information", () => {
+  const { container } = render(<Product product={product} />);
+  expect(container.querySelector("h2").innerHTML).toBe(product.name);
+  expect(container.querySelector("strong").innerHTML).toBe("$" + product.price);
+});
+
+it("product information is visible when the button is clicked", () => {
+  const { container } = render(<Product product={product} />);
+  expect(container.firstChild.lastChild.firstChild).toBeNull();
+  fireEvent.click(container.querySelector("button"));
+  expect(container.firstChild.lastChild.firstChild.innerHTML).toBe(
+    product.summary
+  );
 });

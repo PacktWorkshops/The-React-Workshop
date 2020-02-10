@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { render, cleanup, fireEvent } from "@testing-library/react";
+import React from "react";
+import { render, cleanup } from "@testing-library/react";
 import { ProductListing } from "./index";
 
 afterEach(cleanup);
@@ -30,7 +30,7 @@ it("renders listing of products", () => {
   expect(asFragment()).toMatchSnapshot();
 });
 
-it("renders listing of products", () => {
+it("renders filtered number of results", () => {
   const { container } = render(
     <ProductListing products={products} selectedTag="milk" />
   );

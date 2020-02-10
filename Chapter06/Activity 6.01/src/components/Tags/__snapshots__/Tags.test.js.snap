@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders listing of products 1`] = `
+exports[`renders a list of tags 1`] = `
 <DocumentFragment>
   <div>
     Select Filter
