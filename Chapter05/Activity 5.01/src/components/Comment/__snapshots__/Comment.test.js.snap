@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders comment 1`] = `
+<DocumentFragment>
+  <div
+    class="comment"
+  >
+    <div
+      class="comment_container"
+    >
+      <img
+        alt="Karen Michaels"
+        class="comment_profile"
+        src="https://images.unsplash.com/photo-1567336273898-ebbf9eb3c3bf?auto=format&fit=crop&w=200&q=80"
+      />
+      <div
+        class="comment_content"
+      >
+        <h2
+          class="comment_name"
+        >
+          Karen Michaels
+        </h2>
+        <strong
+          class="comment_time"
+        >
+          Oct 10, 2019
+        </strong>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque, purus ac feugiat eleifend, ex.
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

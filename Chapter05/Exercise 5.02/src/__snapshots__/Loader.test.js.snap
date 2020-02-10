@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders loader 1`] = `
+<DocumentFragment>
+  <div
+    class="spinner"
+  >
+    <svg
+      focusable="false"
+      height="50"
+      viewBox="0 0 50 50"
+      width="50"
+    >
+      <circle
+        cx="25"
+        cy="25"
+        r="15"
+      />
+    </svg>
+  </div>
+</DocumentFragment>
+`;

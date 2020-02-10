@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders profile 1`] = `
+<DocumentFragment>
+  <section
+    class="profile"
+  >
+    <header>
+      <h1>
+        Brian
+      </h1>
+    </header>
+    <div
+      class="profile-content"
+    >
+      <div
+        class="profile-image"
+      >
+        <img
+          alt="Brian"
+          src="https://images.unsplash.com/photo-1470071131384-001b85755536?auto=format&fit=crop&w=200&q=80"
+        />
+      </div>
+      <div>
+        <p>
+          <strong>
+            Age:
+          </strong>
+           9
+        </p>
+        <p>
+          <strong>
+            Interests:
+          </strong>
+           Reading, Swimming, Technology
+        </p>
+        <p>
+          <strong>
+            Favourite Color:
+          </strong>
+           Red
+        </p>
+        <p>
+          <strong>
+            Favourite Movie:
+          </strong>
+           Star Wars
+        </p>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

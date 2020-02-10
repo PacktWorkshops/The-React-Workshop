@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="spinner"
+    >
+      <svg
+        focusable="false"
+        height="60"
+        viewBox="0 0 60 60"
+        width="60"
+      >
+        <circle
+          cx="30"
+          cy="30"
+          r="20"
+        />
+      </svg>
+    </div>
+    ,
+  </div>
+</DocumentFragment>
+`;

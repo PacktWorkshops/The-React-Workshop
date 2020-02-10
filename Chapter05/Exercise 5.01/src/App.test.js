@@ -1,9 +1,22 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import { render, cleanup } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+afterEach(cleanup);
+
+it("renders", () => {
+  const { asFragment } = render(<App />);
+  expect(asFragment()).toMatchSnapshot();
+});
+
+test("renders div with class App", () => {
+  const { container } = render(<App />);
+  expect(container.firstChild.classList.contains("App")).toBe(true);
+});
+
+test("renders Profile component with class profile", () => {
+  const { container } = render(<App />);
+  expect(container.firstChild.firstChild.classList.contains("profile")).toBe(
+    true
+  );
 });
