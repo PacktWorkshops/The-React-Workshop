@@ -10,9 +10,11 @@ const ProductListing = props => {
     : products;
   return (
     <div>
-      {filteredProduct.map((product, key) => (
-        <Product key={`${product.name}-${key}`} product={product} />
-      ))}
+      {filteredProduct &&
+        filteredProduct.length &&
+        filteredProduct.map((product, key) => (
+          <Product key={`${product.name}-${key}`} product={product} />
+        ))}
     </div>
   );
 };

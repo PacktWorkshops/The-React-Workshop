@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a list of tags 1`] = `
+<DocumentFragment>
+  <div>
+    Select Filter
+    <button
+      class="tag "
+    >
+      black
+    </button>
+    <button
+      class="tag "
+    >
+      chocolate
+    </button>
+    <button
+      class="tag "
+    >
+      milk
+    </button>
+    <button
+      class="tag "
+    >
+      froth
+    </button>
+    <button
+      class="tag "
+    >
+      water
+    </button>
+  </div>
+</DocumentFragment>
+`;

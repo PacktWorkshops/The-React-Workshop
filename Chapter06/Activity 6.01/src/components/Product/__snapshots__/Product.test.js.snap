@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders product 1`] = `
+<DocumentFragment>
+  <div
+    class="product"
+  >
+    <div
+      class="product_header"
+    >
+      <h2>
+        Expresso
+      </h2>
+      <div>
+        <button>
+          +
+        </button>
+      </div>
+    </div>
+    <strong>
+      $5.5
+    </strong>
+    <div />
+  </div>
+</DocumentFragment>
+`;
