@@ -1,0 +1,23 @@
+body {
+  margin: 20px;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  background: #4444ff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  height: 40px;
+  width: 200px;
+  margin: 5px;
+}
+
+ul.errors > li {
+  color: red;
+}

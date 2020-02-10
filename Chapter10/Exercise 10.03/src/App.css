@@ -1,0 +1,41 @@
+.App {
+  margin: 0 auto;
+  max-width: 880px;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.row {
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  color: red;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.sidebar {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .row, .navbar {
+    flex-direction: column;
+  }
+}
