@@ -14,25 +14,6 @@ describe('component rendering', () => {
   });
 });
 
-const API = `https://images-api.nasa.gov/search`;
-
-const fetchData = async query => {
-  const url = API;
-  return await axios.get(API, {
-    params: { q: query }
-  });
-};
-
-jest.mock('axios');
-
-describe('fetch data', () => {
-  it('fetches data successfully from the API', async () => {
-    axios.get.mockImplementation(() => Promise.resolve({ status: 200 }));
-
-    await expect(fetchData('europa')).resolves.toEqual({ status: 200 });
-  });
-});
-
 describe('form event', () => {
   it('triggers the popularity button click', () => {
     const wrapper = mount(<App />);
