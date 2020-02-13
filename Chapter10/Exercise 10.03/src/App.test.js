@@ -10,10 +10,10 @@ test('renders correctly', () => {
   expect(container).toMatchSnapshot();
 });
 
-test('routes to main page correctly', () => {
+test('routes to dashboard page correctly', () => {
   const history = createBrowserHistory();
 
-  history.push("/");
+  history.push("/dashboard");
   const {container} = render(
     <MemoryRouter>
       <App />
@@ -22,10 +22,10 @@ test('routes to main page correctly', () => {
   expect(container).toMatchSnapshot()
 });
 
-test('routes to page1 correctly', () => {
+test('routes to dashboard map widget correctly', () => {
   const history = createBrowserHistory();
 
-  history.push("/1");
+  history.push("/dashboard/map");
   const {container} = render(
     <MemoryRouter>
       <App />
@@ -34,10 +34,10 @@ test('routes to page1 correctly', () => {
   expect(container).toMatchSnapshot()
 });
 
-test('routes to page2 correctly', () => {
+test('routes to dashboard table widget correctly', () => {
   const history = createBrowserHistory();
 
-  history.push("/path/123");
+  history.push("/dashboard/table");
   const {container} = render(
     <MemoryRouter>
       <App />
@@ -46,10 +46,10 @@ test('routes to page2 correctly', () => {
   expect(container).toMatchSnapshot()
 });
 
-test('routes to page3 correctly', () => {
+test('routes to dashboard chart widget correctly', () => {
   const history = createBrowserHistory();
 
-  history.push("/path/first/last");
+  history.push("/dashboard/chart");
   const {container} = render(
     <MemoryRouter>
       <App />
