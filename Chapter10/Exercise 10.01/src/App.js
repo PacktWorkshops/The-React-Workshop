@@ -1,75 +1,74 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Link,
-  Route,
-  useParams,
-  useLocation,
   Switch,
-} from 'react-router-dom';
+  Route,
+  Link,
+  useParams,
+  useRouteMatch
+} from "react-router-dom";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <div>
-          <h2>Pages</h2>
-          <ul>
-            <li>
-              <Link to="/">Page1</Link>
-            </li>
-            <li>
-              <Link to="/name">Page2</Link>
-            </li>
-            <li>
-              <Link to="/path/Theo">Page3</Link>
-            </li>
-            <li>
-              <Link to="/path/">Page3 Missing Param</Link>
-            </li>
-            <li>
-              <Link to="/path/theo/despoudis">Page4</Link>
-            </li>
-          </ul>
+        <div className="navbar">
+          <Link to="/">Home</Link>
+          <Link to="/dashboard">Dashboard</Link>
         </div>
-        <Switch>
-          <Route exact path="/">
-            <Page1 />
-          </Route>
-          <Route exact path="/:id">
-            <Page2 />
-          </Route>
-          <Route exact path="/path/:name">
-            <Page3 />
-          </Route>
-          <Route path="/path/:first/:last">
-            <Page4 />
-          </Route>
-        </Switch>
+
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/dashboard">
+              <Dashboard />
+            </Route>
+          </Switch>
       </Router>
     </div>
   );
 }
 
-function Page1() {
-  return <h3>Page1</h3>;
+function Home() {
+  return <h3>Home Page</h3>;
 }
 
-function Page2() {
-  let { id } = useParams();
-  console.info(useLocation().search);
-  return <h3>ID: {id}</h3>;
+function Dashboard() {
+  let { path, url } = useRouteMatch();
+  return (
+    <div className="row">
+      <div className="sidebar">
+        Sidebar
+      </div>
+      <div className="main">
+        <div className="navbar">
+          <Link to={`${url}/map`}>Map</Link>
+          <Link to={`${url}/chart`}>Chart</Link>
+          <Link to={`${url}/table`}>Table</Link>
+        </div>
+        <Switch>
+          <Route exact path={path}>
+            <h3>Please select a widget.</h3>
+          </Route>
+          <Route path={`${path}/:widgetName`}>
+            <Widget />
+          </Route>
+        </Switch>
+      </div>
+    </div>
+  )
 }
 
-function Page3() {
-  let { name } = useParams();
-  return <h3>Hello { name ? `${name}` : 'stranger'}</h3>;
-}
+function Widget() {
+  let { widgetName } = useParams();
 
-function Page4() {
-  let { first, last } = useParams();
-  return <h3>First: {first}, Last: {last}</h3>;
+  return (
+    <div>
+      <h3>Widget: {widgetName}</h3>
+    </div>
+  );
 }
 
 export default App;
