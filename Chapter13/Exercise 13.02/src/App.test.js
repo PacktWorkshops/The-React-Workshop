@@ -5,6 +5,9 @@ import App from "./App";
 import { mount } from "enzyme";
 
 describe(App, () => {
+  const alertMock = jest.fn();
+  window.alert = alertMock;
+
   const component = mount(<App />);
 
   it("renders without crashing", () => {
@@ -50,14 +53,12 @@ describe(App, () => {
   it("sets a total price of 0 when all items have been removed", () => {
     const cartTotal = component
       .find("div")
-      .at(2)
+      .at(3)
       .text();
     expect(cartTotal).toEqual("Total price £0");
   });
 
   it("with a fresh component, when pay now is clicked, all items in the cart disappear", () => {
-    const alertMock = jest.fn();
-    window.alert = alertMock;
     const fresh = mount(<App />);
     const text = fresh.text();
     expect(text.indexOf("desk")).not.toEqual(-1);
@@ -65,7 +66,7 @@ describe(App, () => {
     expect(text.indexOf("lamp")).not.toEqual(-1);
     fresh
       .find("button")
-      .at(0)
+      .at(3)
       .simulate("click");
     expect(fresh.text().indexOf("desk")).toEqual(-1);
     expect(fresh.text().indexOf("chair")).toEqual(-1);

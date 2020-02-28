@@ -16,11 +16,10 @@ import { mount } from "enzyme";
 //   })
 // }));
 
-// const alertMock = jest.fn();
-
-// window.alert = alertMock;
-
 describe(App, () => {
+  const alertMock = jest.fn();
+  window.alert = alertMock;
+
   const component = mount(<App />);
 
   it("renders without crashing", () => {
@@ -68,7 +67,7 @@ describe(App, () => {
       .find("div")
       .at(2)
       .text();
-    expect(cartTotal).toEqual("Total price £0");
+    expect(cartTotal.indexOf("Total price £0")).not.toEqual(-1);
   });
 
   it("with a fresh component, when pay now is clicked, all items in the cart disappear", () => {
@@ -81,7 +80,7 @@ describe(App, () => {
     expect(text.indexOf("lamp")).not.toEqual(-1);
     fresh
       .find("button")
-      .at(0)
+      .at(3)
       .simulate("click");
     expect(fresh.text().indexOf("desk")).toEqual(-1);
     expect(fresh.text().indexOf("chair")).toEqual(-1);
