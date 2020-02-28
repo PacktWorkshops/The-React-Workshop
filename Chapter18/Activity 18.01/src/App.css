@@ -1,0 +1,35 @@
+body {
+  height: 100vh;
+}
+.App {
+  height: 200vh;
+  position: absolute;
+}
+.Viewport {
+  height: 50vh;
+  width: 100vw;
+  position: relative;
+  overflow-y: scroll;
+
+  background-color: yellow;
+}
+.Modal {
+  width: 30vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.ModalOverlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
