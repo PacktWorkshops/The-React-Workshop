@@ -14,6 +14,6 @@ describe(App, () => {
   });
 
   it("includes the lifecycle test component", () => {
-    expect(component.find("p").text()).toEqual("Hello!");
+    expect(component.find("p").text()).toEqual("I only show up if the conditional is true!");
   });
 });
