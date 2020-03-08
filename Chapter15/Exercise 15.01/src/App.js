@@ -9,7 +9,7 @@ const App = () => {
   const submitForm = e => {
     e.preventDefault();
 
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=254fc88173497a209da40119a87d15cc&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=your-api-key&units=metric`;
 
     axios
       .get(url)

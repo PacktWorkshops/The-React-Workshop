@@ -15,7 +15,7 @@ describe('component rendering', () => {
 });
 
 const fetchData = async query => {
-  const API = `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=254fc88173497a209da40119a87d15cc&units=metric`;
+  const API = `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=your-api-key&units=metric`;
 
   const url = API;
   return await axios.get(url);
