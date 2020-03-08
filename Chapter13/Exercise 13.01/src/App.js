@@ -27,6 +27,8 @@ const Checkout = props => {
         flexBasis: "100%"
       }}
     >
+      <>The item will be delivered to 2A, Baird Street, MI 2WX, Manchester</>
+      <br />
       <Pay createTransaction={props.createTransaction} />
     </div>
   );
@@ -87,7 +89,7 @@ const Item = props => {
       }}
     >
       <p>
-        {props.name}: {props.price}
+        {props.name}: £{props.price}
       </p>
       <button onClick={() => props.delete(props.name)}>Remove from Cart</button>
     </div>
@@ -124,8 +126,8 @@ const App = () => {
         className="App"
         style={{ display: "flex", justifyContent: "space-between" }}
       >
-        <Checkout createTransaction={createTransaction} />
         <Cart />
+        <Checkout createTransaction={createTransaction} />
       </div>
     </ShoppingCartProvider>
   );
