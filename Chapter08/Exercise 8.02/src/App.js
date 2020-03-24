@@ -5,9 +5,8 @@ import {
   Route,
   Link,
 } from 'react-router-dom';
-import {UncontrolledForm} from './UncontrolledForm';
+import {ControlledForm} from './ControlledForm';
 import './App.css';
-import {PlainForm} from "./PlainForm";
 
 function App() {
   return (
@@ -16,19 +15,13 @@ function App() {
         <div>
           <ul>
             <li>
-              <Link to="/">Plain Form</Link>
-            </li>
-            <li>
-              <Link to="/uncontrolled">Uncontrolled Form Component</Link>
+              <Link to="/">Controlled Form Component</Link>
             </li>
           </ul>
           <hr />
           <Switch>
             <Route exact path="/">
-              <PlainForm />
-            </Route>
-            <Route exact path="/uncontrolled">
-              <UncontrolledForm />
+              <ControlledForm />
             </Route>
           </Switch>
         </div>

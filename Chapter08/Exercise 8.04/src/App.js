@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import FormLevelValidation from "./FormLevelValidation";
+import FormValidationControl from "./FormValidationControl";
 
 function App() {
   return (
     <div className="App">
-      <FormLevelValidation />
+      <FormValidationControl />
     </div>
   );
 }

@@ -6,7 +6,6 @@ import {
   Link,
 } from 'react-router-dom';
 import {UncontrolledForm} from './UncontrolledForm';
-import {ControlledForm} from "./ControlledForm";
 import './App.css';
 import {PlainForm} from "./PlainForm";
 
@@ -20,9 +19,6 @@ function App() {
               <Link to="/">Plain Form</Link>
             </li>
             <li>
-              <Link to="/uncontrolled">Uncontrolled Form Component</Link>
-            </li>
-            <li>
               <Link to="/controlled">Controlled Form Component</Link>
             </li>
           </ul>
@@ -33,9 +29,6 @@ function App() {
             </Route>
             <Route exact path="/uncontrolled">
               <UncontrolledForm />
-            </Route>
-            <Route path="/controlled">
-              <ControlledForm />
             </Route>
           </Switch>
         </div>
