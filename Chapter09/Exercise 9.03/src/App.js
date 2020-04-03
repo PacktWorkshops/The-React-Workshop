@@ -60,9 +60,6 @@ const App = () => (
       <Route path="/search">
         <Search />
       </Route>
-      <Route path="*">
-        <h1>404 - Component Not Found</h1>
-      </Route>
     </Switch>
   </Router>
 );

@@ -13,10 +13,18 @@ describe(App, () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it("includes three different static app components", () => {
-    const lines = component.find("p").map(p => p.text());
-    expect(lines.indexOf("Times Called: 1")).not.toEqual(-1);
-    expect(lines.indexOf("Times Called: 2")).not.toEqual(-1);
-    expect(lines.indexOf("Times Called: 3")).not.toEqual(-1);
+  it("shows loading if it is loading", () => {
+    component.setState({ loading: true });
+    expect(component.text().indexOf("Loading...")).not.toEqual(-1);
+  });
+
+  it("shows no messages if it is not loading and there are no messages", () => {
+    component.setState({ loading: false, messages: [] });
+    expect(component.text().indexOf("No messages!")).not.toEqual(-1);
+  });
+
+  it("shows messages if it is not loading and there are messages", () => {
+    component.setState({ loading: false, messages: ["Foobar"] });
+    expect(component.text().indexOf("Foobar")).not.toEqual(-1);
   });
 });
