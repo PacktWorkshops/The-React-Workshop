@@ -19,13 +19,28 @@ it('passes a prop in an array', () => {
     {
       name: 'Tiger',
       number: 3890,
-      endangered: true
-    }
+      endangered: true,
+    },
   ]);
 
   expect(wrapper.props()[0]).toEqual({
     name: 'Tiger',
     number: 3890,
-    endangered: true
+    endangered: true,
   });
+});
+
+it('passes the photo', () => {
+  const wrapper = mount(<Animal />);
+
+  wrapper.setProps([
+    {
+      name: 'Tiger',
+      number: 3890,
+      endangered: true,
+      photo: 'https://source.unsplash.com/Si6Obte6Bu0/200x100',
+    },
+  ]);
+
+  expect(wrapper.render().find('img').length).toEqual(3);
 });

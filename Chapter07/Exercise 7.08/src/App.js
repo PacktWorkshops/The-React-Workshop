@@ -12,7 +12,7 @@ class App extends Component {
           number: 3890,
           endangered: true,
           photo: 'https://source.unsplash.com/Si6Obte6Bu0/200x100',
-          donation: 100
+          donation: 100,
         },
         {
           id: '2',
@@ -20,7 +20,7 @@ class App extends Component {
           number: 200000,
           endangered: false,
           photo: 'https://source.unsplash.com/c8XlAc1akIU/200x100',
-          donation: 10
+          donation: 10,
         },
         {
           id: '3',
@@ -28,15 +28,15 @@ class App extends Component {
           number: 10000,
           endangered: true,
           photo: 'https://source.unsplash.com/2zYHKx8jtvU/200x100',
-          donation: 50
-        }
-      ]
+          donation: 50,
+        },
+      ],
     };
   }
 
   removeList(id) {
-    this.setState(prevState => {
-      const list = prevState.details.filter(item => item.id !== id);
+    this.setState((prevState) => {
+      const list = prevState.details.filter((item) => item.id !== id);
       return { ...prevState, details: list };
     });
   }
@@ -53,7 +53,7 @@ class App extends Component {
   }
 }
 
-const withDonationColor = WrappedComponent => {
+const withDonationColor = (WrappedComponent) => {
   return class extends Component {
     constructor(props) {
       super(props);
@@ -77,7 +77,7 @@ const withDonationColor = WrappedComponent => {
   };
 };
 
-const AnimalDetails = props => {
+const AnimalDetails = (props) => {
   const { id, name, number, endangered, donation } = props.detail;
 
   return (
@@ -100,7 +100,7 @@ const AnimalDetails = props => {
 
 const WrapperComponent = withDonationColor(AnimalDetails);
 
-const Animal = props => {
+const Animal = (props) => {
   const details = props.details;
 
   return (
@@ -121,7 +121,7 @@ const Animal = props => {
   );
 };
 
-const Photo = props => {
+const Photo = (props) => {
   return <img src={props.path} alt={props.name} />;
 };
 
