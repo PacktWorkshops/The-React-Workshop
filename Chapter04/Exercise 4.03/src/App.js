@@ -6,6 +6,10 @@ class App extends Component {
     // State will be messages: ["Hello World", "How are you"]
     this.state = { messages: [], loading: true };
   }
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    console.log('prevProps:', prevProps);
+    console.log('prevState:', prevState);
+  }
   componentDidMount() {
     setTimeout(
       () =>

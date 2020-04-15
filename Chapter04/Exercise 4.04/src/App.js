@@ -1,46 +1,37 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+
+import Message from "./Message";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    // State will be messages: ["Hello World", "How are you"]
-    this.state = { messages: [], loading: true };
+    this.state = {
+      list: [
+        { id: 1, message: "Hello" },
+        { id: 2, message: "Everyone" },
+        { id: 3, message: "What" },
+        { id: 4, message: "Is" },
+        { id: 5, message: "Up" }
+      ]
+    };
   }
-  componentDidMount() {
-    setTimeout(
-      () =>
-        this.setState({
-          messages: ['Hello World', 'How are you?'],
-          loading: false
-        }),
-      10000 // 10 seconds
-    );
-  }
-  renderProfile() {
-    if (this.state.loading) {
-      return <div>Loading...</div>;
-    }
-    if (this.state.messages && this.state.messages.length > 0) {
-      return (
-        <div>
-          <ul>
-            {this.state.messages.map((msg, index) => (
-              <li key={`msg-${index}`}>{msg}</li>
-            ))}
-          </ul>
-        </div>
-      );
-    } else {
-      return <div>No messages!</div>;
-    }
+  removeItem(id) {
+    const newList = this.state.list.filter(item => item.id !== id);
+    this.setState({ list: newList });
   }
   render() {
     return (
       <div className="App">
-        User Profile
-        <hr />
-        {this.renderProfile()}
+        <h1>My Items</h1>
+        {this.state.list.map(item => (
+          <Message
+            key={item.id}
+            id={item.id}
+            message={item.message}
+            removeItem={this.removeItem.bind(this)}
+          />
+        ))}
       </div>
     );
   }
