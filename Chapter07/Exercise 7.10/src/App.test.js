@@ -19,13 +19,19 @@ it('passes a prop in an array', () => {
     {
       name: 'Tiger',
       number: 3890,
-      endangered: true
-    }
+      endangered: true,
+    },
   ]);
 
   expect(wrapper.props()[0]).toEqual({
     name: 'Tiger',
     number: 3890,
-    endangered: true
+    endangered: true,
   });
+});
+
+it('submits the form and update the count', () => {
+  const wrapper = mount(<Animal />);
+  wrapper.find('form').simulate('submit');
+  expect(wrapper.render().find('span').text()).toEqual(' 2');
 });

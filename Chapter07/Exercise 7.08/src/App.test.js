@@ -19,13 +19,19 @@ it('passes a prop in an array', () => {
     {
       name: 'Tiger',
       number: 3890,
-      endangered: true
-    }
+      endangered: true,
+    },
   ]);
 
   expect(wrapper.props()[0]).toEqual({
     name: 'Tiger',
     number: 3890,
-    endangered: true
+    endangered: true,
   });
+});
+
+it('tests click event', () => {
+  const wrapper = mount(<Animal />);
+  wrapper.find('button').at(1).simulate('click');
+  expect(wrapper.render().find('button').length).toEqual(2);
 });
