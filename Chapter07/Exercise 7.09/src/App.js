@@ -20,7 +20,7 @@ class App extends Component {
           number: 3890,
           endangered: true,
           photo: 'https://source.unsplash.com/Si6Obte6Bu0/200x100',
-          donation: 100
+          donation: 100,
         },
         {
           id: 2,
@@ -28,7 +28,7 @@ class App extends Component {
           number: 200000,
           endangered: false,
           photo: 'https://source.unsplash.com/c8XlAc1akIU/200x100',
-          donation: 10
+          donation: 10,
         },
         {
           id: 3,
@@ -36,21 +36,21 @@ class App extends Component {
           number: 10000,
           endangered: true,
           photo: 'https://source.unsplash.com/2zYHKx8jtvU/200x100',
-          donation: 50
-        }
-      ]
+          donation: 50,
+        },
+      ],
     };
   }
 
   removeList(id) {
-    this.setState(prevState => {
-      const list = prevState.details.filter(item => item.id !== id);
+    this.setState((prevState) => {
+      const list = prevState.details.filter((item) => item.id !== id);
       return { ...prevState, details: list };
     });
   }
 
   addList(details) {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       const newId = prevState.details.length + 1;
       const newDetails = { ...details, id: newId };
       return { ...prevState, details: [...prevState.details, newDetails] };
@@ -81,7 +81,7 @@ class AnimalForm extends Component {
       number: 0,
       endangered: false,
       photo: '',
-      donation: 0
+      donation: 0,
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -118,11 +118,21 @@ class AnimalForm extends Component {
         <h2>Add new animal details</h2>
         <label>
           <div className='title'>Name:</div>{' '}
-          <input type='text' name='name' onChange={this.handleChange} />
+          <input
+            type='text'
+            name='name'
+            value={this.state.name}
+            onChange={this.handleChange}
+          />
         </label>
         <label>
           <div className='title'>Number:</div>{' '}
-          <input type='number' name='number' onChange={this.handleChange} />
+          <input
+            type='number'
+            name='number'
+            value={this.state.number}
+            onChange={this.handleChange}
+          />
         </label>
         <div>
           <div className='title'>Endangered:</div>
@@ -130,7 +140,7 @@ class AnimalForm extends Component {
             <input
               type='radio'
               name='endangered'
-              value='true'
+              value={this.state.endangered}
               onChange={this.handleChange}
             />{' '}
             Yes
@@ -139,7 +149,7 @@ class AnimalForm extends Component {
             <input
               type='radio'
               name='endangered'
-              value='false'
+              value={!this.state.endangered}
               onChange={this.handleChange}
             />{' '}
             No
@@ -147,11 +157,21 @@ class AnimalForm extends Component {
         </div>
         <label>
           <div className='title'>Photo:</div>{' '}
-          <input type='text' name='photo' onChange={this.handleChange} />
+          <input
+            type='text'
+            name='photo'
+            value={this.state.photo}
+            onChange={this.handleChange}
+          />
         </label>
         <label>
           <div className='title'>Donation:</div> $
-          <input type='number' name='donation' onChange={this.handleChange} />
+          <input
+            type='number'
+            name='donation'
+            value={this.state.donation}
+            onChange={this.handleChange}
+          />
         </label>
         <div>
           <button>Add to the list</button>
@@ -161,7 +181,7 @@ class AnimalForm extends Component {
   }
 }
 
-const withDonationColor = WrappedComponent => {
+const withDonationColor = (WrappedComponent) => {
   return class extends Component {
     constructor(props) {
       super(props);
@@ -185,7 +205,7 @@ const withDonationColor = WrappedComponent => {
   };
 };
 
-const AnimalDetails = props => {
+const AnimalDetails = (props) => {
   const { id, name, number, endangered, donation } = props.detail;
 
   return (
@@ -208,7 +228,7 @@ const AnimalDetails = props => {
 
 const WrapperComponent = withDonationColor(AnimalDetails);
 
-const Animal = props => {
+const Animal = (props) => {
   const details = props.details;
 
   return (
@@ -229,7 +249,7 @@ const Animal = props => {
   );
 };
 
-const Photo = props => {
+const Photo = (props) => {
   return <img src={props.path} alt={props.name} />;
 };
 
