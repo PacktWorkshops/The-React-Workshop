@@ -5,6 +5,7 @@ import App from "./App";
 import { mount } from "enzyme";
 
 describe(App, () => {
+  const removeItemSpy = jest.spyOn(App.prototype, "removeItem");
   const component = mount(<App />);
 
   it("renders without crashing", () => {
@@ -13,35 +14,24 @@ describe(App, () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it("starts with an empty state and is loading", () => {
-    expect(component.state("messages").length).toEqual(0);
-    expect(component.state("loading")).toEqual(true);
-    expect(
-      component
-        .find("div")
-        .at(1)
-        .text()
-    ).toEqual("Loading...");
+  it("includes all of the messages", () => {
+    const messages = component.state("list").map(m => m.message);
+    component.find(".Message").forEach(msg => {
+      const text = msg.find("p").text();
+      expect(messages.indexOf(text)).not.toEqual(-1);
+    });
   });
 
-  it("loads the rest of the messages after 10 seconds", () => {
-    setTimeout(() => {
-      expect(component.state("messages").length > 0).toEqual(true);
-      expect(component.state("loading")).toEqual(false);
-      const messages = component.state("messages");
-      component.find("li").forEach(li => {
-        expect(messages.indexOf(li.text())).not.toEqual(-1);
-      });
-    }, 10000);
-  });
-
-  it("displays a no message error if there are no messages and it is not loading", () => {
-    component.setState({ messages: [], loading: false });
-    expect(
-      component
-        .find("div")
-        .at(1)
-        .text()
-    ).toEqual("No messages!");
+  it("removes messages too", () => {
+    const spy = jest.spyOn(App.prototype, "removeItem");
+    const countBefore = component.state("list").length;
+    component
+      .find(".Message")
+      .first()
+      .find("button")
+      .simulate("click");
+    const countAfter = component.state("list").length;
+    expect(removeItemSpy).toHaveBeenCalled();
+    expect(countAfter < countBefore).toEqual(true);
   });
 });

@@ -47,16 +47,4 @@ describe(App, () => {
         .indexOf("Lorem Ipsum")
     ).toEqual(-1);
   });
-
-  it("displays a 404 message when navigating to a bad route", () => {
-    history.push("/error");
-    const wrapper = mount(
-      <MemoryRouter>
-        <App />
-      </MemoryRouter>
-    );
-    expect(wrapper.find(".Search").length).toEqual(0);
-    expect(wrapper.find(".Homepage").length).toEqual(0);
-    expect(wrapper.find("h1").text()).toEqual("404 - Component Not Found");
-  });
 });
