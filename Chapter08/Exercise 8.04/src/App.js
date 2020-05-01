@@ -1,6 +1,6 @@
-import React from 'react';
-import './App.css';
-import FormValidationControl from "./FormValidationControl";
+import React from "react";
+import "./App.css";
+import FormValidationControl from "./FormYupValidation";
 
 function App() {
   return (

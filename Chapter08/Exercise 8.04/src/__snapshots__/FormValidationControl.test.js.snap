@@ -1,34 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`displays an error message 1`] = `
-<div>
-  <form>
-    <label>
-      Name*:
-      <input
-        name="name"
-        type="text"
-        value=""
-      />
-    </label>
-    Name is Required
-    <label>
-      Password*:
-      <input
-        name="password"
-        type="password"
-        value=""
-      />
-    </label>
-    Min length of Password is 8 chars
-    <input
-      type="submit"
-      value="Login"
-    />
-  </form>
-</div>
-`;
-
 exports[`renders correctly 1`] = `
 <div>
   <form>
