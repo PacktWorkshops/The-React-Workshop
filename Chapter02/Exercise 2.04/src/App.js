@@ -5,18 +5,11 @@ class App extends Component {
     password: "",
     passwordConfirmation: "",
     email: "",
-    errors: []
+    errors: [],
   };
-  validateUsernameOnBlur = event => {
+  validateUsernameOnBlur = (event) => {
     console.log("I should validate whatever is in ", event.target.value);
-    this.performValidations();
   };
-  performValidations() {
-    console.log(this.state.username);
-    if (this.state.username.length <= 0) {
-      this.state.errors.push("The username must be filled out!");
-    }
-  }
   displayForm() {
     return (
       <div>
