@@ -16,11 +16,7 @@ describe(App, () => {
     expect(component.find("input").length).toEqual(4);
     expect(component.find("button").length).toEqual(1);
     expect(
-      component
-        .find("div")
-        .at(0)
-        .text()
-        .indexOf("Create Account")
+      component.find("div").at(0).text().indexOf("Create Account")
     ).not.toEqual(-1);
   });
 
@@ -29,15 +25,5 @@ describe(App, () => {
     const wrapper = mount(<App />);
     wrapper.find("button").simulate("click");
     expect(submitForm).toHaveBeenCalledTimes(1);
-  });
-
-  it("calls performValidations", () => {
-    const validateMock = jest.spyOn(App.prototype, "performValidations");
-    const wrapper = mount(<App />);
-    wrapper
-      .find("input[type='text']")
-      .first()
-      .simulate("blur");
-    expect(validateMock).toHaveBeenCalledTimes(1);
   });
 });
