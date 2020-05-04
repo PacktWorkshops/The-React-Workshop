@@ -9,6 +9,7 @@ class App extends Component {
   };
   validateUsernameOnBlur = (event) => {
     console.log("I should validate whatever is in ", event.target.value);
+    this.setState();
   };
   displayForm() {
     return (
