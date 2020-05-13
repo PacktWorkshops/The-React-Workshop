@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1,
-      "name": "Expresso",
+      "name": "Espresso",
       "price": 5.5,
       "summary": "Galão, grinder mocha, filter plunger pot siphon mug variety est caramelization. Galão cortado medium latte organic aroma dripper lungo extraction crema. Bar variety spoon a fair trade filter iced. To go mocha wings irish kopi-luwak acerbic doppio kopi-luwak viennese saucer aroma arabica.",
       "tags": ["black"]
@@ -16,7 +16,7 @@
     },
     {
       "id": 3,
-      "name": "Capuchinno",
+      "name": "Cappuccino",
       "price": 5,
       "summary": "So robust strong, pumpkin spice carajillo extraction grounds aged flavour et acerbic. Siphon as robusta grounds seasonal chicory est extraction. Half and half arabica spoon aroma cinnamon decaffeinated qui fair trade wings. Latte mocha dark redeye percolator crema black doppio body frappuccino body saucer.",
       "tags": ["milk", "froth"]
