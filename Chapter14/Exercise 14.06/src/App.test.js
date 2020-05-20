@@ -13,13 +13,3 @@ describe('component rendering', () => {
     expect(wrapper.length).toEqual(1);
   });
 });
-
-describe('form event', () => {
-  it('triggers the popularity button click', () => {
-    const wrapper = mount(<App />);
-
-    wrapper.find('input').simulate('change', { target: { value: 'europa' } });
-
-    expect(wrapper.find('input').prop('value')).toEqual('europa');
-  });
-});
