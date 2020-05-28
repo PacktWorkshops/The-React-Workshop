@@ -45,10 +45,13 @@ class App extends Component {
     };
   }
 
-  removeList(id) {
+ removeList(id) {
     this.setState(prevState => {
       const list = prevState.details.filter(item => item.id !== id);
       return { ...prevState, details: list };
+    },
+    () => {
+      this.updateCount();
     });
   }
 
