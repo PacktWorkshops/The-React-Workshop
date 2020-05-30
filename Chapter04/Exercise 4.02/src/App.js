@@ -6,7 +6,7 @@ class LifecycleTest extends Component {
     console.log('LifecycleTest Constructor');
   }
   render() {
-    return <p>Hello!</p>;
+    return <p>I only show up if the conditional is true!</p>;
   }
 }
 
