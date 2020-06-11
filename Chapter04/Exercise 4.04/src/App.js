@@ -8,11 +8,11 @@ class App extends Component {
     super(props);
     this.state = {
       list: [
-        { id: 1, message: "Hello" },
-        { id: 2, message: "Everyone" },
-        { id: 3, message: "What" },
-        { id: 4, message: "Is" },
-        { id: 5, message: "Up" }
+        { id: 1, message: 'Hello' },
+        { id: 2, message: 'Everyone' },
+        { id: 3, message: 'What' },
+        { id: 4, message: 'Is' },
+        { id: 5, message: 'Up' }
       ]
     };
   }
