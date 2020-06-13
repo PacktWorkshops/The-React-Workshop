@@ -1,11 +1,9 @@
 img {
   width: 200px;
 }
-
 body {
   margin: 20px;
 }
-
 button {
   width: 200px;
   height: 50px;
@@ -13,5 +11,5 @@ button {
   color: white;
   font-weight: bold;
   border: none;
-  cursor: pointer;
+  cursor: pointer;  
 }
