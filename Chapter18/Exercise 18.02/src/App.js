@@ -14,7 +14,7 @@ const overlayStyles = {
   // the background creates a black-transparent background
 };
 const Salutation = () => {
-  return <div>Welcome to the React Workshop!</div>;
+  return <div style={{backgroundColor:'white', width: "22vw", height: "10vh", display: "flex", justifyContent: "center", alignItems: "center", borderRadius:4}}>Welcome to the React Workshop!</div>;
 };
 const Overlay = () => {
   const bodySelector = document.querySelector("body");
