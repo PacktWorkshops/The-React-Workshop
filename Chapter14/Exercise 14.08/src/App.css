@@ -6,15 +6,3 @@
 h1 {
   text-align: center;
 }
-
-.c-search {
-  display: flex;
-  margin: 0 auto;
-  width: 50%;
-}
-
-.c-search__input {
-  display: block;
-  flex-grow: 1;
-  margin-right: 10px;
-}
