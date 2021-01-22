@@ -3,7 +3,6 @@
 [![GitHub forks](https://img.shields.io/github/forks/PacktWorkshops/The-React-Workshop.svg)](https://github.com/PacktWorkshops/The-React-Workshop/network)
 [![GitHub stars](https://img.shields.io/github/stars/PacktWorkshops/The-React-Workshop.svg)](https://github.com/PacktWorkshops/The-React-Workshop/stargazers)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/PacktWorkshops/The-React-Workshop/pulls)
-[![versions](https://img.shields.io/pypi/pyversions/pybadges.svg)](https://www.python.org/downloads/)
 
 This is the repository for [The React Workshop](https://www.amazon.com/React-Workshop-Interactive-Approach-Learning-ebook/dp/B082VG6JCL/ref=sr_1_1?dchild=1&keywords=The%20React%20Workshop&qid=1611056710&sr=8-1&utm_source=GitHub&utm_medium=Repository&utm_campaign=9781838645564&utm_term=React&utm_content=The%20React%20Workshop), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the course from start to finish.
 
