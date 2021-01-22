@@ -11,7 +11,9 @@ This is the repository for [The React Workshop](https://www.amazon.com/React-Wor
 <a href="https://www.amazon.com/React-Workshop-Interactive-Approach-Learning-ebook/dp/B082VG6JCL/ref=sr_1_1?dchild=1&keywords=The%20React%20Workshop&qid=1611056710&sr=8-1&utm_source=GitHub&utm_medium=Repository&utm_campaign=9781838645564&utm_term=React&utm_content=The%20React%20Workshop"><img src="https://github.com/PacktWorkshops/Workshop-Covers/blob/master/The%20React%20Workshop.png" alt="The React Workshop" height="290px" width="230px" align="right" this.target="_blank"></a>
 
 To get started with the project files, you'll need to:
-
+* Install [Node.js/NPM](https://nodejs.org)
+* Install [Yarn](https://classic.yarnpkg.com/en/docs/install)
+* Install [Visual Studio Code editor](https://code.visualstudio.com)
 
 ## About The React Workshop
 [The React Workshop](https://www.amazon.com/React-Workshop-Interactive-Approach-Learning-ebook/dp/B082VG6JCL/ref=sr_1_1?dchild=1&keywords=The%20React%20Workshop&qid=1611056710&sr=8-1&utm_source=GitHub&utm_medium=Repository&utm_campaign=9781838645564&utm_term=React&utm_content=The%20React%20Workshop) equips you with the knowledge you need to implement React logic in web applications. You’ll learn important best practices and essential React methods with the help of interesting examples and exercises.	
